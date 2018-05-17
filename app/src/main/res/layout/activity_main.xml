@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBienvenida"
+        android:textSize="15dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp">
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/btMaterias"
+        android:text="Ver plan de estudios"
+        android:onClick="verLista"/>
+    <Button
+        android:id="@+id/btInfo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:text="Ver resumen de tu carrera"
+        android:onClick="verResumen"/>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Agregar materias al plan"
+        android:onClick="verMateria"
+        />
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Ver tus materias"
+            android:onClick="verMaterias"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
